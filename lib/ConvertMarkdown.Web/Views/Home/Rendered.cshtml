@@ -1,0 +1,18 @@
+﻿@model ConvertMarkdown.Web.Models.Markdown;
+@{
+    Layout = null;
+}
+<!DOCTYPE html>
+<html>
+<head>
+    <title>Rendered</title>
+    <link rel="stylesheet" href="~/css/main.css" />
+</head>
+<body>
+    <div class="center">
+        <div class="markdown_main center" style="background-color: white;">
+            @Html.Raw(Model.HTMLText)
+        </div>
+    </div>
+</body>
+</html>

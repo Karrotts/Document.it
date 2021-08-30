@@ -31,8 +31,7 @@
 
   <ItemGroup>
     <Reference Include="ConvertMarkdown">
-      <HintPath>..\..\..\..\dev\ConvertMarkdown\ConvertMarkdown\bin\Release\netcoreapp3.1\ConvertMarkdown.dll</HintPath>
+      <HintPath>..\..\lib\ConvertMarkdown.dll</HintPath>
     </Reference>
   </ItemGroup>
-
 </Project>
