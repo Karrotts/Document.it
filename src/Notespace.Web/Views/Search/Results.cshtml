@@ -1,0 +1,23 @@
+﻿@using Microsoft.AspNetCore.Identity
+@model IEnumerable<SearchResults>
+@inject SignInManager<ApplicationUser> SignInManager
+@inject UserManager<ApplicationUser> UserManager
+@{
+    ViewData["Title"] = "Search Results";
+}
+
+<form asp-action="Results" method="post">
+    <input name="search" type="text" placeholder="Search.." style="width:90%;">
+    <button type="submit"><i class="fa fa-search"></i></button>
+</form>
+<br />
+
+<h2 class="display-6">Results: </h2>
+
+@foreach (SearchResults results in Model)
+{
+    <a asp-controller="@results.Type" asp-action="Details" asp-route-id="@results.Id" class="d-flex p-3 note_button">
+        <div style="white-space: normal;"><i class="far fa-sticky-note"></i> @results.Title</div>
+        <span style="margin-left: auto;">CREATED BY: @results.Creator</span>
+    </a>
+}

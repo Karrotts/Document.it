@@ -1,0 +1,59 @@
+﻿<form asp-action="Results">
+    <div class="form-group">
+        <label for="ReportTitle">Report Title</label>
+        <input name="reportTitle" type="text" class="form-control" value="New Report">
+    </div>
+    <div class="form-group">
+        <label for="username">Username</label>
+        <input name="username" type="text" class="form-control" placeholder="Username">
+    </div>
+    <div class="form-group">
+        <label for="Title">Note / Notebook Title</label>
+        <input name="title" type="text" class="form-control" placeholder="Title">
+    </div>
+    <div class="form-group">
+        <label for="Type">Type</label>
+        <select name="type" class="form-control">
+            <option value="notes">Notes Only</option>
+            <option value="notebooks">Notebooks Only</option>
+            <option value="both">Both Notes &amp; Notebooks</option>
+        </select>
+    </div>
+    <div class="form-row">
+        <br />
+        <label for="lm">Last Modified Range</label>
+        <div class="form-group col-md-5">
+            <label for="dateafter">After Date:</label>
+            <input name="lm_after" id="after" type="date" class="form-control">
+        </div>
+        <div class="form-group col-md-5">
+            <label for="dateafter">Before Date:</label>
+            <input name="lm_before" id="before" type="date" class="form-control">
+        </div>
+    </div>
+    <br />
+    <div class="form-group">
+        <label for="Sort">Sort By</label>
+        <select name="sort" class="form-control">
+            <option value="username">Username</option>
+            <option value="title">Title</option>
+            <option value="type">Type</option>
+            <option value="modified">Last Modified</option>
+        </select>
+    </div>
+    <br />
+    <button type="submit" class="btn btn-primary">Generate Report</button>
+</form>
+
+<script>
+    Date.prototype.toDateInputValue = (function () {
+        var local = new Date(this);
+        local.setMinutes(this.getMinutes() - this.getTimezoneOffset());
+        return local.toJSON().slice(0, 10);
+    });
+
+    var date = new Date();
+    date.setDate(date.getDate() + 1);
+    document.getElementById('before').value = date.toDateInputValue();
+    document.getElementById('after').value = new Date('August 19, 1975 23:15:30').toDateInputValue();
+</script>

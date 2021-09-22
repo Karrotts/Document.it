@@ -40,7 +40,7 @@ namespace Notespace.Web.Controllers
         }
 
         [Authorize]
-        public async Task<IActionResult> Details(long? id, long? pageId)
+        public async Task<IActionResult> Details(long? id, long? pageId = 0)
         {
             if (id == null)
             {

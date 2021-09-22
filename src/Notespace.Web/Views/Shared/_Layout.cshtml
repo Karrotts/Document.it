@@ -41,8 +41,13 @@
                         </a>
                     </li>
                     <li class="nav-item">
-                        <a class="nav-link active" aria-current="page" asp-controller="Notes" asp-action="Index">
+                        <a class="nav-link active" aria-current="page" asp-controller="Search" asp-action="Index">
                             <i class="fas fa-search"></i> Search
+                        </a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link active" aria-current="page" asp-controller="Reports" asp-action="Index">
+                            <i class="fas fa-file-csv"></i> Reports
                         </a>
                     </li>
                 </ul>
@@ -73,8 +78,13 @@
                         </a>
                     </li>
                     <li>
-                        <a asp-controller="Notes" asp-action="Index" class="nav-link @(ViewContext.RouteData.Values["controller"].ToString().Equals("Notes") ? "active" : "text-white")">
+                        <a asp-controller="Search" asp-action="Index" class="nav-link @(ViewContext.RouteData.Values["controller"].ToString().Equals("Search") ? "active" : "text-white")">
                             <i class="fas fa-search"></i> Search
+                        </a>
+                    </li>
+                    <li>
+                        <a asp-controller="Reports" asp-action="Index" class="nav-link @(ViewContext.RouteData.Values["controller"].ToString().Equals("Reports") ? "active" : "text-white")">
+                            <i class="fas fa-file-csv"></i> Reports
                         </a>
                     </li>
                 </ul>

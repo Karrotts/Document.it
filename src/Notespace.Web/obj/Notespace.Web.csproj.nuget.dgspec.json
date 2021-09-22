@@ -1,24 +1,23 @@
 {
   "format": 1,
   "restore": {
-    "D:\\Projects\\captstone\\document.it\\src\\Notespace.Web\\Notespace.Web.csproj": {}
+    "C:\\Users\\Wes\\Desktop\\WGU Capstone\\Project\\notespace.io\\src\\Notespace.Web\\Notespace.Web.csproj": {}
   },
   "projects": {
-    "D:\\Projects\\captstone\\document.it\\src\\Notespace.Web\\Notespace.Web.csproj": {
+    "C:\\Users\\Wes\\Desktop\\WGU Capstone\\Project\\notespace.io\\src\\Notespace.Web\\Notespace.Web.csproj": {
       "version": "1.0.0",
       "restore": {
-        "projectUniqueName": "D:\\Projects\\captstone\\document.it\\src\\Notespace.Web\\Notespace.Web.csproj",
+        "projectUniqueName": "C:\\Users\\Wes\\Desktop\\WGU Capstone\\Project\\notespace.io\\src\\Notespace.Web\\Notespace.Web.csproj",
         "projectName": "Notespace.Web",
-        "projectPath": "D:\\Projects\\captstone\\document.it\\src\\Notespace.Web\\Notespace.Web.csproj",
-        "packagesPath": "C:\\Users\\Wesle\\.nuget\\packages\\",
-        "outputPath": "D:\\Projects\\captstone\\document.it\\src\\Notespace.Web\\obj\\",
+        "projectPath": "C:\\Users\\Wes\\Desktop\\WGU Capstone\\Project\\notespace.io\\src\\Notespace.Web\\Notespace.Web.csproj",
+        "packagesPath": "C:\\Users\\Wes\\.nuget\\packages\\",
+        "outputPath": "C:\\Users\\Wes\\Desktop\\WGU Capstone\\Project\\notespace.io\\src\\Notespace.Web\\obj\\",
         "projectStyle": "PackageReference",
         "fallbackFolders": [
-          "C:\\Microsoft\\Xamarin\\NuGet\\",
-          "C:\\Program Files\\dotnet\\sdk\\NuGetFallbackFolder"
+          "C:\\Microsoft\\Xamarin\\NuGet\\"
         ],
         "configFilePaths": [
-          "C:\\Users\\Wesle\\AppData\\Roaming\\NuGet\\NuGet.Config",
+          "C:\\Users\\Wes\\AppData\\Roaming\\NuGet\\NuGet.Config",
           "C:\\Program Files (x86)\\NuGet\\Config\\Microsoft.VisualStudio.Offline.config",
           "C:\\Program Files (x86)\\NuGet\\Config\\Xamarin.Offline.config"
         ],
@@ -94,12 +93,6 @@
           ],
           "assetTargetFallback": true,
           "warn": true,
-          "downloadDependencies": [
-            {
-              "name": "Microsoft.NETCore.App.Host.win-x64",
-              "version": "[3.1.13, 3.1.13]"
-            }
-          ],
           "frameworkReferences": {
             "Microsoft.AspNetCore.App": {
               "privateAssets": "none"
@@ -108,7 +101,7 @@
               "privateAssets": "all"
             }
           },
-          "runtimeIdentifierGraphPath": "C:\\Program Files\\dotnet\\sdk\\5.0.104\\RuntimeIdentifierGraph.json"
+          "runtimeIdentifierGraphPath": "C:\\Program Files\\dotnet\\sdk\\5.0.103\\RuntimeIdentifierGraph.json"
         }
       }
     }
