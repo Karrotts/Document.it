@@ -12,9 +12,16 @@ namespace ConvertMarkdown
             Builder.Initialize();
             List<string> html = new List<string>();
 
-            foreach (string markdown in markdownLines)
+            try
             {
-                html.Add(tokenizer.Tokenize(markdown, html));
+                foreach (string markdown in markdownLines)
+                {
+                    html.Add(tokenizer.Tokenize(markdown, html));
+                }
+            } 
+            catch (Exception e)
+            {
+                Console.WriteLine(e.Message);
             }
 
             tokenizer.Close();

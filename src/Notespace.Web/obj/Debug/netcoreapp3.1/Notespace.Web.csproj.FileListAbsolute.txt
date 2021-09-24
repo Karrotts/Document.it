@@ -547,7 +547,6 @@ C:\Users\Wes\Desktop\WGU Capstone\Project\notespace.io\src\Notespace.Web\bin\Deb
 C:\Users\Wes\Desktop\WGU Capstone\Project\notespace.io\src\Notespace.Web\bin\Debug\netcoreapp3.1\runtimes\win\lib\netcoreapp2.0\System.Runtime.Caching.dll
 C:\Users\Wes\Desktop\WGU Capstone\Project\notespace.io\src\Notespace.Web\bin\Debug\netcoreapp3.1\runtimes\win\lib\netstandard2.0\System.Security.Cryptography.ProtectedData.dll
 C:\Users\Wes\Desktop\WGU Capstone\Project\notespace.io\src\Notespace.Web\bin\Debug\netcoreapp3.1\ConvertMarkdown.dll
-C:\Users\Wes\Desktop\WGU Capstone\Project\notespace.io\src\Notespace.Web\obj\Debug\netcoreapp3.1\Notespace.Web.csprojAssemblyReference.cache
 C:\Users\Wes\Desktop\WGU Capstone\Project\notespace.io\src\Notespace.Web\obj\Debug\netcoreapp3.1\Notespace.Web.AssemblyInfoInputs.cache
 C:\Users\Wes\Desktop\WGU Capstone\Project\notespace.io\src\Notespace.Web\obj\Debug\netcoreapp3.1\Notespace.Web.AssemblyInfo.cs
 C:\Users\Wes\Desktop\WGU Capstone\Project\notespace.io\src\Notespace.Web\obj\Debug\netcoreapp3.1\Notespace.Web.csproj.CoreCompileInputs.cache
@@ -592,3 +591,5 @@ C:\Users\Wes\Desktop\WGU Capstone\Project\notespace.io\src\Notespace.Web\obj\Deb
 C:\Users\Wes\Desktop\WGU Capstone\Project\notespace.io\src\Notespace.Web\obj\Debug\netcoreapp3.1\Razor\Views\Reports\Index.cshtml.g.cs
 C:\Users\Wes\Desktop\WGU Capstone\Project\notespace.io\src\Notespace.Web\obj\Debug\netcoreapp3.1\Razor\Views\Reports\Results.cshtml.g.cs
 C:\Users\Wes\Desktop\WGU Capstone\Project\notespace.io\src\Notespace.Web\obj\Debug\netcoreapp3.1\Razor\Views\Search\Results.cshtml.g.cs
+C:\Users\Wes\Desktop\WGU Capstone\Project\notespace.io\src\Notespace.Web\obj\Debug\netcoreapp3.1\Notespace.Web.csproj.AssemblyReference.cache
+C:\Users\Wes\Desktop\WGU Capstone\Project\notespace.io\src\Notespace.Web\obj\Debug\netcoreapp3.1\Notespace.Web.GeneratedMSBuildEditorConfig.editorconfig

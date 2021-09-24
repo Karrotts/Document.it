@@ -83,11 +83,11 @@ namespace Notespace.Web.Models
             UserManager<ApplicationUser> userManager = app.ApplicationServices
             .CreateScope().ServiceProvider
             .GetRequiredService<UserManager<ApplicationUser>>();
-            ApplicationUser user = await userManager.FindByIdAsync("Karrotts");
+            ApplicationUser user = await userManager.FindByIdAsync("TestUser");
             if (user == null)
             {
                 user = new ApplicationUser();
-                user.UserName = "Karrotts";
+                user.UserName = "TestUser";
                 user.Email = "admin@example.com";
                 user.PhoneNumber = "555-1234";
                 await userManager.CreateAsync(user, adminPassword);
