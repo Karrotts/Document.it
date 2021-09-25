@@ -6,6 +6,7 @@ using Notespace.Web.Models.ViewModels;
 using Notespace.Web.Models;
 using System.Collections.Generic;
 using System.Linq;
+using System;
 
 namespace Notespace.Web.Controllers
 {
@@ -43,16 +44,24 @@ namespace Notespace.Web.Controllers
         {
             if (ModelState.IsValid)
             {
-                ApplicationUser user =
-                await userManager.FindByNameAsync(loginModel.Name);
-                if (user != null)
+                try
                 {
-                    await signInManager.SignOutAsync();
-                    if ((await signInManager.PasswordSignInAsync(user,
-                    loginModel.Password, false, false)).Succeeded)
+                    ApplicationUser user =
+                    await userManager.FindByNameAsync(loginModel.Name);
+                    if (user != null)
                     {
-                        return Redirect(loginModel?.ReturnUrl ?? "/");
+                        await signInManager.SignOutAsync();
+                        if ((await signInManager.PasswordSignInAsync(user,
+                        loginModel.Password, false, false)).Succeeded)
+                        {
+                            return Redirect(loginModel?.ReturnUrl ?? "/");
+                        }
+                        throw new NoUserException();
                     }
+                }
+                catch (NoUserException e)
+                {
+                    Console.WriteLine($"Error: {e.Message}");
                 }
             }
             ModelState.AddModelError("", "Invalid name or password");

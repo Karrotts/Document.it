@@ -5,6 +5,10 @@ VisualStudioVersion = 16.0.30804.86
 MinimumVisualStudioVersion = 10.0.40219.1
 Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "Notespace.Web", "Notespace.Web\Notespace.Web.csproj", "{213A9EDA-A2C0-45C0-B514-CC2131483692}"
 EndProject
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "ConvertMarkdown", "..\lib\ConvertMarkdown\ConvertMarkdown.csproj", "{75405E86-9673-42C9-873A-184244E8C430}"
+EndProject
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "ConvertMarkdown.Tests", "..\lib\ConvertMarkdown.Tests\ConvertMarkdown.Tests.csproj", "{4EAD00EA-27AC-4654-94DE-37B488AB42DD}"
+EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
 		Debug|Any CPU = Debug|Any CPU
@@ -15,6 +19,14 @@ Global
 		{213A9EDA-A2C0-45C0-B514-CC2131483692}.Debug|Any CPU.Build.0 = Debug|Any CPU
 		{213A9EDA-A2C0-45C0-B514-CC2131483692}.Release|Any CPU.ActiveCfg = Release|Any CPU
 		{213A9EDA-A2C0-45C0-B514-CC2131483692}.Release|Any CPU.Build.0 = Release|Any CPU
+		{75405E86-9673-42C9-873A-184244E8C430}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{75405E86-9673-42C9-873A-184244E8C430}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{75405E86-9673-42C9-873A-184244E8C430}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{75405E86-9673-42C9-873A-184244E8C430}.Release|Any CPU.Build.0 = Release|Any CPU
+		{4EAD00EA-27AC-4654-94DE-37B488AB42DD}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{4EAD00EA-27AC-4654-94DE-37B488AB42DD}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{4EAD00EA-27AC-4654-94DE-37B488AB42DD}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{4EAD00EA-27AC-4654-94DE-37B488AB42DD}.Release|Any CPU.Build.0 = Release|Any CPU
 	EndGlobalSection
 	GlobalSection(SolutionProperties) = preSolution
 		HideSolutionNode = FALSE

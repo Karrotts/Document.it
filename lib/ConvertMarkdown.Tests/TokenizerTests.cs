@@ -13,13 +13,14 @@ namespace ConvertMarkdown.Tests
         }
 
         [Test]
-        public void LineBreakTest()
+        public void ConvertMarkdownBoldTest()
         {
             List<string> input = new List<string>()
             {
                 "**Hello World** **Hello Germany**"
             };
-            Markdown.Convert(input);
+
+            Assert.AreEqual(Markdown.Convert(input), "<p><strong>Hello World</strong> <strong>Hello Germany</strong></p>");
         }
     }
 }
